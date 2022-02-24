@@ -4,23 +4,23 @@ from django.shortcuts import render
 
 def fnIndex(request):
    return render(request,'index.html')
-def fnLoginpage(requ):
-   return render(requ,'loginpage.html')
-def fnRegistration(requ):
-   return render(requ,'Registration.html')
-def fnAbout(reques):
-   return render(reques,'About.html')
-def fnContact(req):
-   return render(req,'Contact.html')
-def fnSecondregistration(req):
-   return render(req,'Secondregistration.html')
-def fnJoblist(req):
-   return render(req,'Joblist.html')
+def fnLoginpage(request):
+   return render(request,'loginpage.html')
+def fnRegistration(request):
+   return render(request,'Registration.html')
+def fnAbout(request):
+   return render(request,'About.html')
+def fnContact(request):
+   return render(request,'Contact.html')
+def fnSecondregistration(request):
+   return render(request,'Secondregistration.html')
+def fnJoblist(request):
+   return render(request,'Joblist.html')
 
-def fnAdminlogin(req):
-   return render(req,'Adminlogin.html')
-def fnAddjob(req):
-   return render(req,'Addjob.html')   
+def fnAdminlogin(request):
+   return render(request,'Adminlogin.html')
+def fnAddjob(request):
+   return render(request,'Addjob.html')   
          
       
    

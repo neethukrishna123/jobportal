@@ -6,8 +6,8 @@ def fnIndex(request):
    return render(request,'index.html')
 def fnLoginpage(requ):
    return render(requ,'loginpage.html')
-def fnRegistration(reque):
-   return render(reque,'Registration.html')
+def fnRegistration(requ):
+   return render(requ,'Registration.html')
 def fnAbout(reques):
    return render(reques,'About.html')
 def fnContact(req):

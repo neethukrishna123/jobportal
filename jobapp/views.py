@@ -7,7 +7,7 @@ def fnIndex(request):
 def fnLoginpage(request1):
    return render(request1,'loginpage.html')
 def fnRegistration(request2):
-   return render(request2,'Registration.html')
+   return render(request2,'registration.html')
 def fnAbout(request3):
    return render(request3,'about.html')
 def fnContact(request4):

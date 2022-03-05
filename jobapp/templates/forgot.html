@@ -14,7 +14,7 @@
 <style>
    body{
         margin: 0;
-        background-image: url("{% static 'images/jobimg3.jpg' %}");
+        background-image: url("{% static 'images/jobimg2.jpg' %}");
         background-repeat: no-repeat;
         background-size: cover;
         height: 400px;
@@ -64,60 +64,12 @@ a{
       </div>
 </nav>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-4">
-
+    <div class="row">
+        <div class="col-md-6">
+            
+        </div>
     </div>
-    <div class="col-md-4">
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" placeholder="........" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <!-- <button type="submit" class="btn btn-primary">Submit</button>
-
- -->
-          <div class="form-row">
-           <div class="col-lg-7">
-            <button type="button" class="btn-primary">Login</button>
-            </div>
-          </div>
-            <a href="a">Forgot Password</a>
-            <p>Don't have an account? </p>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                Register Here
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="{% url 'registration' %}">Jobseeker</a>
-                <a class="dropdown-item" href="{% url 'secondregistration' %}">Company</a>
-                
-              </div>
-            </div>
-              <!-- <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-              </select> -->
-            </div>
-        </form>
-        </div> 
-        
-    <div class="col-md-4">
-      
-    </div>
-  </div>
 </div>
-   
-    
+
 </body>
 </html>

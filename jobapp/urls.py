@@ -8,8 +8,8 @@ urlpatterns=[
      path('contact/',views.fnContact,name='contact'),
      path('secondregistration/',views.fnSecondregistration,name='secondregistration'),
      path('joblist/',views.fnJoblist,name='joblist'),
-     path('adminlogin/',views.fnAdminlogin,name='adminlogin'),
-     path('addjob/',views.fnAddjob,name='addjob')
+     path('forgot/',views.fnForgot,name='forgot'),
+     path('userpage/',views.fnUserpage,name='userpage')
     
 
 ]

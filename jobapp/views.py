@@ -24,7 +24,12 @@ def fnAddjob(req1):
 def fnForgot(req2):
    return render(req2,'forgot.html')  
 def fnUserpage(req3):
-   return render(req3,'userpage.html') 
+   return render(req3,'userpage.html')
+def fnUserprofile(req3):
+   return render(req3,'userprofile.html') 
+def fnApplications(req3):
+   return render(req3,'applications.html') 
+          
          
       
    

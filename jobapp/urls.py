@@ -9,7 +9,8 @@ urlpatterns=[
      path('secondregistration/',views.fnSecondregistration,name='secondregistration'),
      path('joblist/',views.fnJoblist,name='joblist'),
      path('forgot/',views.fnForgot,name='forgot'),
-     path('userpage/',views.fnUserpage,name='userpage')
-    
+     path('userpage/',views.fnUserpage,name='userpage'),
+     path('userprofile/',views.fnUserprofile,name='userprofile'),
+     path('applications/',views.fnApplications,name='applications')
 
 ]

@@ -116,7 +116,7 @@ a{
          <div class="items">
             <li><a href="{% url 'userprofile' %}">My Profile</a></li>
            
-            <li><a href="">MY Applications</a></li>
+            <li><a href="{% url 'applications' %}">MY Applications</a></li>
             <li><a href="">Notifications</a></li>
             
             <li><a href="{% url 'joblist' %}">More jobs</a></li>
@@ -145,7 +145,7 @@ a{
 
 </div> -->
 
-<div class="container-fluid col-md-6">
+<!-- <div class="container-fluid col-md-6">
   <h1>My Profile</h1>
   <form class="row g-3">
       <div class="col-md-6">
@@ -190,9 +190,6 @@ a{
   <label for="uploadFile" class="form-label">Upload File</label>
   <input type="file" class="form-control" id="uploadfile" required>
 </div>
-<div class="col-md-6"><br>
-   <a href="#" class="btn btn-success">Update Profile</a>
-</div>
 
 
 
@@ -201,7 +198,84 @@ a{
 
 
   </form>
-</div>
+</div> -->
+
+<div class="container-fluid col-md-6">
+    <h1>Welcome, Neethu</h1><br>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+            <!-- <label for="firstName" class="form-label">First Name</label> -->
+            <!-- <input type="text" class="form-control" id="firstName" required> -->
+            Neethu c
+        </div><br>
+        <br>
+
+
+        <div class="col-md-6">
+            <!-- <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required> -->
+            btech computer science
+        </div><br>
+        <br>
+
+
+       
+      <div class="col-md-6">
+        <!-- <label for="emailAddress" class="form-label">EmailAddress</label>
+        <input type="email" class="form-control" id="emailAddress" required> -->
+        APJ Abdulkalam Technological University
+    </div><br>
+    <br>
+
+
+    <div class="col-md-6">
+      <!-- <label for="contactNumber" class="form-label">ContactNumber</label>
+      <input type="3425678756" class="form-control" id="contactNumber" required> -->
+      Chandrathil House
+      Ariyallur po
+      
+  </div><br>
+  <br>
+  
+
+
+  
+  <div class="col-md-6">
+    <!-- <label for="address" class="form-label">Adress</label>
+    <input type="text" class="form-control" id="Address" required> -->
+    Malappuram
+  </div>
+  <div class="col-md-6">
+    <!-- <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" id="city" required> -->
+    <a href="{% url 'userpage' %}"><button type="button" class="btn btn-primary">Update profile</button></a>
+   </div> 
+  <!-- <div class="col-md-6">
+    <label for="qualification" class="form-label">Qualification</label>
+    <input type="text" class="form-control" id="qualification" required>
+  </div>
+  <div class="col-md-6">
+    <label for="college" class="form-label">College</label>
+    <input type="text" class="form-control" id="college" required>
+  </div>
+  <div class="col-md-6">
+    <label for="skills" class="form-label">Skills</label>
+    <input type="text" class="form-control" id="skills" required>
+  </div>
+  <div class="col-md-6">
+    <label for="uploadFile" class="form-label">Upload File</label>
+    <input type="file" class="form-control" id="uploadfile" required>
+  </div>
+  
+  
+  
+   -->
+    
+  
+  
+    </form>
+  </div> 
   
 </body>
 </html>

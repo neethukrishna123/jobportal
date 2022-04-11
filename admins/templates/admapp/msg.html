@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cmprofile</title>
+    <title>userprofile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
  </head>   
 <style>
+  body{
+        margin: 0;
+        background-image: url("{% static 'images/adimg1.jpg' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
    #nav1{
         background-color: rgb(41, 33, 33);
+        height: 150px;
+        width: 100%;
     }
    
 a{
@@ -55,6 +64,53 @@ a{
         background: rgb(27, 26, 26);
     }
 
+    h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.bi{
+    padding-left: 30px;
+}
+h5 p{
+    padding-left: 30px;
+}
+.form-control{
+    width: 400px;
+    margin-left: 20px;
+}
+.f1{
+    width: 865px;
+}
+.radio1{
+    /* margin-left:10px; */
+    padding-left: 20px;
+}
+.btn{
+    width: 865px;
+    color: #fff;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+h1{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;   
+    padding-top: 40px   ; 
+}
+.table{
+    margin-top: 60px;
+    background-color: rgba(255, 253, 253, 0.4);
+    width: 800px;
+    margin-left: 49px;
+}
+.table shadow{
+    margin-top: 50px;
+}
+
+
 
   
 </style>
@@ -63,7 +119,7 @@ a{
 
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light nav1 " id="nav1">
+  <nav class="navbar navbar-expand-lg navbar-light nav1 container-fluid " id="nav1">
     <div  class="col-md-6" >
     
       <img  src="" width="60px" width="60px" alt="">
@@ -93,44 +149,61 @@ a{
         </ul>
     </div>
     
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="{% url 'addjob' %}"><button type="button" class="btn btn-primary btn-lg">Post Job</button></a>
-        </li>
-      </ul>
-  </div>
-  
+    <div >
+      
+    </div>
 </nav>
-
-  <div class="row">
+<div class="row">
     <div class="col-md-4">
        <section id="menu">
          <div class="logo">
-            <img src="{% static 'images/cmimage.jpg' %}">
-            <h2>Tech Solution</h2><hr>
+            <img src="{% static 'images/userimg1.png' %}">
+            <h2>name</h2><hr>
          </div>
          <div class="items">
-            <li><a href="">Company Profile</a></li>
-           
-            <li><a href="">View Applications</a></li>
+            <li><a href="{% url 'admindashboard' %}" >Profile</a></li>
             <li><a href="">Notifications</a></li>
+           
+            <li><a href="">Message</a></li>
+            <li><a href="">View companies</a></li>
             
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="" >Log out</a></li>
              
          </div>
-
        </section>
 </div>
 
-<div class="container-fluid col-md-6">
-  <h1>Tech Solution</h1>
-  <img src="{% static 'images/companyimg.jpeg' %}" alt="">
-  <p>A solution is an implementation of people, processes, information and technologies in a distinct system to support a set of business or technical capabilities that solve one or more business problems.</p>
-</div>
-
+<h1 style="color: #fff;">MESSAGES</h1>
+<table class="table shadow" style="position: unset;">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Email</th>
+        <th scope="col">Massage</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>neethuchandrathil@gmail.com</td>
+        <td>sfgdjghlk</td>
+        <td><a class="btn btn-dark" href="">view</a></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>anu1567@gmail.com</td>
+        <td>tyturuutykty</td>
+        <td><a class="btn btn-dark" href="">view</a></td>
+      </tr>
+      <tr> <th scope="row">1</th>
+        <td>neethuchandrathil@gmail.com</td>
+        <td>rgfjhlk</td>
+        <td><a class="btn btn-dark" href="">view</a></td>
+      </tr>
+    
+    </tbody>
+  </table>
 </body>
 </html>
 

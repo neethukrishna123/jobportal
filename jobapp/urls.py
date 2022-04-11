@@ -1,16 +1,21 @@
+from doctest import master
 from django.urls import path
 from. import views
+
 urlpatterns=[
-    path('index/',views.fnIndex,name='home'),
-     path('loginpage/',views.fnLoginpage,name='loginpage'),
-     path('registration/',views.fnRegistration,name='registration'),
-     path('about/',views.fnAbout,name='about'),
-     path('contact/',views.fnContact,name='contact'),
-     path('secondregistration/',views.fnSecondregistration,name='secondregistration'),
-     path('joblist/',views.fnJoblist,name='joblist'),
-     path('forgot/',views.fnForgot,name='forgot'),
-     path('userpage/',views.fnUserpage,name='userpage'),
-     path('userprofile/',views.fnUserprofile,name='userprofile'),
-     path('applications/',views.fnApplications,name='applications')
+
+    path('index/',views.index,name='home'),
+     path('loginpage/',views.loginpage,name='loginpage'),
+     path('registration/',views.registration,name='registration'),
+     path('about/',views.about,name='about'),
+     path('contact/',views.contact,name='contact'),
+     path('secondregistration/',views.secondregistration,name='secondregistration'),
+     path('joblist/',views.joblist,name='joblist'),
+     path('forgot/',views.forgot,name='forgot'),
+     path('userpage/',views.userpage,name='userpage'),
+     path('userprofile/',views.userprofile,name='userprofile'),
+     path('applications/',views.applications,name='applications'),
+    # path('master/',views.master,name='master')
+
 
 ]

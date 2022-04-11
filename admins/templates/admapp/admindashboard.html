@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>userprofile</title>
+    <title>admin profile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
@@ -14,7 +14,11 @@
 <style>
    #nav1{
         background-color: rgb(41, 33, 33);
+        height: 150px;
+        width: 100%;
     }
+
+   
    
 a{
         color: #fff;
@@ -55,6 +59,38 @@ a{
         background: rgb(27, 26, 26);
     }
 
+    h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+/* .bi{
+    padding-left: 30px;
+} */
+/* h5 p{
+    padding-left: 30px;
+} */
+/* .form-control{
+    width: 400px;
+    margin-left: 20px;
+} */
+.f1{
+    width: 865px;
+}
+.radio1{
+    /* margin-left:10px; */
+    padding-left: 20px;
+}
+.btn{
+    width: 865px;
+    color: #fff;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+
+
 
   
 </style>
@@ -63,7 +99,7 @@ a{
 
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light nav1 " id="nav1">
+  <nav class="navbar navbar-expand-lg navbar-light nav1 container-fluid " id="nav1">
     <div  class="col-md-6" >
     
       <img  src="" width="60px" width="60px" alt="">
@@ -93,16 +129,8 @@ a{
         </ul>
     </div>
     
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-        Search By
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="">Qualification</a>
-        <a class="dropdown-item" href="">City</a>
-        <a class="dropdown-item" href="">Company</a>
-        
-      </div>
+    <div >
+      
     </div>
 </nav>
 
@@ -114,12 +142,14 @@ a{
             <h2>name</h2><hr>
          </div>
          <div class="items">
-            <li><a href="{% url 'userprofile' %}">My Profile</a></li>
-           
-            <li><a href="">MY Applications</a></li>
+           <li><a href="{% url 'admindashboard' %}" >Profile</a></li>
+             
             <li><a href="">Notifications</a></li>
+           
+            <li><a href="">Message</a></li>
+            <li><a href="">View companies</a></li>
             
-            <li><a href="{% url 'joblist' %}">More jobs</a></li>
+            <li><a href="" >Log out</a></li>
              
          </div>
        </section>
@@ -145,64 +175,46 @@ a{
 
 </div> -->
 
-<div class="container-fluid col-md-6">
-  <h1>My Profile</h1>
-  <form class="row g-3">
-      <div class="col-md-6">
-          <label for="firstName" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="firstName" required>
-      </div>
-      <div class="col-md-6">
-          <label for="lastName" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="lastName" required>
-      </div>
-     
-    <div class="col-md-6">
-      <label for="emailAddress" class="form-label">EmailAddress</label>
-      <input type="email" class="form-control" id="emailAddress" required>
+<!-- <i class="bi bi-person-circle ml-5" style="font-size: 3rem;"></i> -->
+<div class="col-md-6" >
+  <h1 >Profile</h1><hr>
+<h5 class="ml-5">Neethu c</h5>
+<p class="ml-5">neethuchandrathil@gmail.com</p>
+<form class="row g-3">
+  <div class="col-md-6">
+    <input type="text" class="form-control" id="inputFname4" placeholder="First Name">
+    <!-- <p id="p2">*Please fill</p> -->
   </div>
   <div class="col-md-6">
-    <label for="contactNumber" class="form-label">ContactNumber</label>
-    <input type="3425678756" class="form-control" id="contactNumber" required>
-</div>
-
-<div class="col-md-6">
-  <label for="address" class="form-label">Adress</label>
-  <input type="text" class="form-control" id="Address" required>
-</div>
-<div class="col-md-6">
-  <label for="city" class="form-label">City</label>
-  <input type="text" class="form-control" id="city" required>
-</div>
-<div class="col-md-6">
-  <label for="qualification" class="form-label">Qualification</label>
-  <input type="text" class="form-control" id="qualification" required>
-</div>
-<div class="col-md-6">
-  <label for="college" class="form-label">College</label>
-  <input type="text" class="form-control" id="college" required>
-</div>
-<div class="col-md-6">
-  <label for="skills" class="form-label">Skills</label>
-  <input type="text" class="form-control" id="skills" required>
-</div>
-<div class="col-md-6">
-  <label for="uploadFile" class="form-label">Upload File</label>
-  <input type="file" class="form-control" id="uploadfile" required>
-</div>
-<div class="col-md-6"><br>
-   <a href="#" class="btn btn-success">Update Profile</a>
-</div>
-
-
-
-
-
-
-
-  </form>
-</div>
+    <input type="text" class="form-control" id="inputLname4" placeholder="Last Name">
+    <!-- <p id="p3">*Please fill</p> -->
+  </div>
+  <div class="col-12">
+    <input type="email" class="form-control f1" id="inputEmail4" placeholder="Email">
+    <!-- <p id="p4">*Enter your Email address</p> -->
+  </div>
+  <div class="col-6">
+    <input type="date" class="form-control" id="inputEmail4" placeholder="Date of birth">
+    <!-- <p id="p4">*Enter your Email address</p> -->
+  </div>
+  <div class="dropdown col-6 radio1">
+    <label for="">Gender: </label>
+    <label for="">Female</label>
+    <input type="radio" id="gender">
+    <label for="">Male</label>
+    <input type="radio" id="gender">
+  </div>
+ 
+  <div class="col-12">
+    <input type="password" class="form-control f1" id="inputPassword4" placeholder="Address">
+    <!-- <p id="p1">*Enter your Password</p> -->
+  </div>     
+  <div class="col-12">
+    <a  class="btn btn-light" id="sign" href="">Save </a>
+  </div>
+</form>
   
+</div>
 </body>
 </html>
 

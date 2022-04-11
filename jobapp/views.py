@@ -2,33 +2,47 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def fnIndex(request):
-   return render(request,'index.html')
-def fnLoginpage(request1):
-   return render(request1,'loginpage.html')
-def fnRegistration(request2):
-   return render(request2,'registration.html')
-def fnAbout(request3):
-   return render(request3,'about.html')
-def fnContact(request4):
-   return render(request4,'contact.html')
-def fnSecondregistration(request5):
-   return render(request5,'secondregistration.html')
-def fnJoblist(request6):
-   return render(request6,'joblist.html')
+def index(request):
+   return render(request,'userapp/index.html')
 
-def fnAdminlogin(req):
-   return render(req,'adminlogin.html')
-def fnAddjob(req1):
-   return render(req1,'addjob.html')  
-def fnForgot(req2):
-   return render(req2,'forgot.html')  
-def fnUserpage(req3):
-   return render(req3,'userpage.html')
-def fnUserprofile(req3):
-   return render(req3,'userprofile.html') 
-def fnApplications(req3):
-   return render(req3,'applications.html') 
+def loginpage(request1):
+   return render(request1,'userapp/loginpage.html')
+
+def registration(request2):
+   return render(request2,'userapp/registration.html')
+
+def about(request3):
+   return render(request3,'userapp/about.html')
+
+def contact(request4):
+   return render(request4,'userapp/contact.html')
+
+def secondregistration(request5):
+   return render(request5,'userapp/secondregistration.html')
+
+def joblist(request6):
+   return render(request6,'userapp/joblist.html')
+
+def adminlogin(req):
+   return render(req,'userapp/adminlogin.html')
+
+def addjob(req1):
+   return render(req1,'userapp/addjob.html')  
+
+def forgot(req2):
+   return render(req2,'userapp/forgot.html') 
+
+def userpage(req3):
+   return render(req3,'userapp/userpage.html')
+
+def userprofile(req3):
+   return render(req3,'userapp/userprofile.html') 
+
+def applications(req3):
+   return render(req3,'userapp/applications.html') 
+   
+# def master(req3):
+#    return render(req3,'userapp/master.html')
           
          
       

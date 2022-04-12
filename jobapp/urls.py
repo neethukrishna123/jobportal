@@ -15,6 +15,7 @@ urlpatterns=[
      path('userpage/',views.userpage,name='userpage'),
      path('userprofile/',views.userprofile,name='userprofile'),
      path('applications/',views.applications,name='applications'),
+      path('notifications/',views.notifications,name='notifications'),
     # path('master/',views.master,name='master')
 
 

@@ -40,6 +40,9 @@ def userprofile(req3):
 
 def applications(req3):
    return render(req3,'userapp/applications.html') 
+def notifications(req3):
+   return render(req3,'userapp/notifications.html') 
+   
    
 # def master(req3):
 #    return render(req3,'userapp/master.html')
